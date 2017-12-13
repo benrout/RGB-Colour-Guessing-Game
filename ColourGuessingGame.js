@@ -82,7 +82,7 @@ function setupSquares(){
             messageDisplay.textContent = "Correct!";
             resetButton.textContent = "Play Again?";
         } else {
-            this.style.backgroundColor = "#232323";
+            this.style.opacity = "0";
             messageDisplay.textContent = "Try Again";
             }
         });
@@ -92,6 +92,7 @@ function setupSquares(){
 function gameWin(){
     h1.style.backgroundColor = pickedColour;
     for(var i = 0; i < squares.length; i++){
+        squares[i].style.opacity = "1";
         squares[i].style.backgroundColor = pickedColour;
     }
 }
