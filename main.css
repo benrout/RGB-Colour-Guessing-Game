@@ -30,6 +30,7 @@ h1 {
     margin: 0;
     text-transform: uppercase;
     padding: 20px 0;
+    text-shadow: 2px 2px #232323;
 }
 
 #colourDisplay {
